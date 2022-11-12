@@ -90,7 +90,7 @@ from #temp3 t3
 where count2 is not NULL
 and lag is not null
 
---TASK4: Has any customer than 1 pack type? If yes, count the number of such customers.
+--TASK4: Has any customer ordered more than 1 pack type? If yes, count the number of such customers.
 select count(*) as OrderedMoreThan1Pack
 from
 (select _CustID, count(_CustID) as Count
